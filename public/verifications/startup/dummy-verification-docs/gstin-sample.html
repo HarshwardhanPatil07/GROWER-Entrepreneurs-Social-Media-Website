@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample GST Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .certificate {
+            border: 8px solid #0e4d92;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            width: 120px;
+            height: auto;
+        }
+        h1 {
+            color: #0e4d92;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .content {
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .signature {
+            text-align: center;
+            width: 200px;
+        }
+        .signature img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .certificate-number {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .instructions {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .note {
+            color: red;
+            font-weight: bold;
+        }
+        .qrcode {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qrcode img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Sample GST Certificate for Testing</h2>
+        <p>This is a dummy GST (Goods and Services Tax) Registration Certificate template that you can save as PDF to use for testing the verification system.</p>
+        <p class="note">Note: This is not a real certificate. In a real scenario, you would upload your actual GST certificate.</p>
+        <h3>How to use:</h3>
+        <ol>
+            <li>Press Ctrl+P (or Command+P on Mac) to open the print dialog</li>
+            <li>Select "Save as PDF" as the printer</li>
+            <li>Save the file as "YourStartupName-GST-Certificate.pdf"</li>
+            <li>Use this PDF to test the verification upload system</li>
+        </ol>
+    </div>
+
+    <div class="certificate">
+        <div class="header">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAABIFBMVEUAAAD///8zMzP19fX8/Pzz8/Py8vL29vbq6ur39/fx8fEaGhrw8PD9/f37+/vr6+vt7e3o6Oj4+Pj6+vrm5ubp6ens7OxJSUlSUlJDQ0Pg4ODb29va2trd3d3j4+NYWFjl5eXh4eHf39/n5+fc3Nze3t6lpaW6urrt7/GcnJzT09PCwsJ9fX3Jycm7u7vQ0NDFxcXNzc3ExMSzs7PDw8Ozs7e9vb2/v7+pqanDw7+ysrLQ0NS3t7fFxcm0tLSsrKysrLDPz8/Ly8/Kyse5ubmXl5eioqKLi4uSkpJra2uenp6NjY10dHRiYmKWlpZ/f39XV1dubm6EhIRoaGiKiopbW1t3d3dhYWGDg4OPj49QUFCPj5MpKSlERETHyMuVlZk7OztAQEAiIiIXFxc5Kfd+AAANO0lEQVR42uyXe08TQRDF9z5gyXabbmvL0oK0PApaqYBKkSggVEASEzWKMSb+/3/CnZndbVHBh4aE7H4/9OHu3HP2zMzcsdlstthiiyWvg4ODV6+PWg57x/T65PToYKAlMRKdDas5Gn7kG8Ph8UGSJFE7DeEc37/MWiudDk9afsp0ejI8/HW/SC5Jw3fH+ertQXbaSDrHp81wTlruhvP3TMtHB8d1ZyBKXz8mfNH6TxhJp8tp/eR1kO6PW9+ApqfD+mYWpYS0wj13nNKeOAioPN6vjqaTVS+xf3pyfJjUT973L3nRTQ2PnUZHVni9LLpqwMtvHnBIJo5Zly6+McYxHv5KkMR+Y8Pw+GNyediRzq+qFv+Nx9xFodB3VN2uG9JA4+uA7PEJdzGZLNQci2fuo+gKkIfvnNHk9HgllZm7KEiq7rqHcP5AernpX/5MddVZ1n4URdvSYQm5GiOsvG+7C10fnNrOH3LTw/clZcYPQkFAgND9e86vjiD6I5Vfb4UwdIEgEChCGIbA8JvctoNVn9wfT37fh3cA5g+k08AKOvc9YUCIwpdrcf4g5JJovSuQuAF1EVf9BQ9w6Hcd/XNJ8Ic+JMgBAiwI8TfWC46LX5VBj/Ix+f3Il/wCgT8IvBAAeOzc9uwKnkQQ+MYA8yv/xp2f3Hn/pK7/VX4BAAgACcQVl0C/Wfq5dH4N4G+r04rnQQQ5g6gGmMV9l6DqTQGO7fCgNn7nz8XvESRQhJtrZJ+Jv2sQ3NLXjbP7Oq7tXxlyCVgSCm2o4bMiCG0fdw5K77MvmZ9N+bsUP+NPJdD4mwaQhcnEJ5glv2DwHEAhfAcwdRTYyRGsOHxLAMCXANL5QknPEQQ+3NptGMwEvxCgb9erfmC/3/MlPkdIw0MI/CzChEmBxA0MI7pQTsP27qqDxyh9jY9f8lMDUfhtILgZAoEWpQBGDb0UIQu/8GVghcd4qQCa3/N9xS8IQTsXgrZ0UAnAYHfP6mEc3MsYdD/sq6f0On4+G5UCIaA70rM7goDHoc+Fi18TKAFq0NCefb+W+NZ+YPy15OcGiKBdg+AIGNH0wxBgbiACPCz66xr2v9H5Ib/za4B2ezwGimCnQAQ5aDBiAEGQBJ8tgJj86/T9Q3zdL3WAhtOmDPQN3IEACOUdyQRoCsH3BQAf//Tjxo/3T1339X2rBWjUl3PgJYCOUaYANshOJQF1wLA0AHV9buveV+G7iR/iPp8ffMeFAK0cA2lAMWAOKAMzR/AImoABfFkBNX6v91X6RTZ+M3/mbyPAeGzOQa5gTpCXoLuazpgA1CCS4JpgIIOe8Z8HvU7ZayeJ9E8z6PSJPhBWS3A4BoZCgBb61N4ECt0yMXtPhiEJQIAmEPNrMvQBBkGBL4axbf+9I3fs75Txwx2R7995EDUD3QEpAXRDG3BDY46sEVYEkQKA37P/iP/XPvslPzcg/M3x+NZFMAToJOiyKXTkIS51EEwyvRJ+Jf9W3T/1O4A2C2hXC0CDLgY4aQzkFJQLSOcCYgqgAAaAldCu5i+3n/DbNQE9A7THN3MlCGYGZAmoVfe0BXGJoEPnf8cU1fVl/mX/qZ/rV+5/Wf+svxH/yjcMgT5GRmoJWicyBbwDTQAHYUYBwTC0KfMvcV91X82/ufuGIGAI8hLwGpQEHlowAxcsAKxgmbQI0Dbnn+8/GQBZf9m/8X9vQoz/LYbgrpbAAMxAgA7kDLAVjKbGAWshMFsgYyAHQM7/7MNvcr4rf8QH/NzfngJ0RQlUCzQBdTAG8gBRCESMEEIEqwJICgvBXE9/dP19+8X+YwG8wS2rwC2VAYYgChgQQtoMsDfEWbhgBUwLgZl+t7fH6Ztm/4J/bFL2b+4/1M/P1wLu6hJUEXgMaB8GwLuQ+eQoCGoN1v6B9dXjtwKg7gMYP/F7KQDijxvj8U0t4GZOwIOAoRoD7UGxiLPwYrZcab8XfmX+efzz/pn7j+ND9WL9ayXcywG8EpgKREtAHQxBpraJO4XFvoDz31f8ef+pu+/dcPiJvzXuGv92DtAqCqBK4HvgDmQVZIMhQKPpeEL4l6YPeaCb7Q/rfz/0u/Tb/i8fwFmCeReuVQAn7tYaXiaDSAdh6qWA+P152xk//aL9HoDWH9afARpZ4EZZga7TBQcGatCfujDZWgB0B6QNw7xTbzJR4e/p9rMBjN+Ev/BvZP7Hif9GUUAGcO6pEty7OsA0ZAr8QQHwc4CRnIJxp9OY7exnfc4/j58j9y/rh/qXAhoCZwzc0x8ErAs5AlSgf0+0MGqMAUCX4GKu/eTxLzYPALI77t3s2m9kE74gArTHbfpKGCSdQXrGRgzQ1CXI+aF9HAQXM5jI1HW5/xrATQJuYoha37r5Be+v++cBDB4CUAfmFFqjMcjfQhwFddzs98v9T/ef/ZfXj8sn4/cAVIDbboYK8Dbk6bYFU2hOCIARPsd/lvYf+o0fcz2/+oiA9Ruj/vFNvwK2G+PLd3ILeApECloCCNBXAF7BWQO8JH/t+6tg7/yUfgG4f9mHoL+f+90rmF+++n8FaF96oAhUCGYFGOBiNJvhYhbZ/Zdpbufm4m3w+tw/hJ/Dux/cHThx1/Tb3gW3KoA8f8R/suB7ASB8oACQopllNumXp/8Sm2+CaU7+1anvNZvlB08DEQAPg3tFCQwBfwkZuzCfQzS/ubCbmOH5t2S+p+rvAL8YgKLPy58e/R4AAfpQh6AgGmGKf4JfzCZL/PNfZfz1zwP6/g0tCwDbgBv823ogBMT/OHetApPJ6KIH0fwSkc/5q5N/ubr+8/q5U+m/pVVujttRAQQI3Rhw8UjJ/CRbjCaTba/dLm0/t///xHsZdjL3j7l+qgAB669/aHgDyKEIEEK5YwWZax+AP1sBZTE12z8rFsCuv3f9DBoBiBFreG9ojR+ACFHf+BFBls2WwyF+Fv8H1eYPvPR77acAmF8YULeogNj/xwFZQICyuLq6Wi2HJhO5/xj+q78M5uqz725eP3MAeP0vHBCCD0Eg+JH+LdU+GP9yOST8mfr+eewnvwFY/Bb9uQYQIPpQEAIZgzn/rVzLHeD/bPGX4RVxyST9fPot++fon+VenX9d/1r/rwQGkPEHGsD5LIPcC63TVTrb3Z1MFqsc39l/nH/Ov+jf59+qfwcAjv/i7at/2NalCJIXQsBzMIHb55eXl1fD7e2dwlfWH+9ABUj93QK44e/1/6sP/E5W/0DAWQCIdw23d9OK/dvpb+zXAHr8CgBrOXwI9M9aPXj9ZQQgJ4RQgvn8/GoIsoFT//v/DL/+/HsAAKj/PvDqhyzvAQQgRwoCQEmWu7vij+8/PP/G/P33GaD+/hMC4Pd9QAg8IUaCxXjCLPq/M57/Yr9aA/EAVO3+Xv8A+KARBIDPKChq0HI4HOfQvv6P+esfQABqDWD4qwB/7IECQP23HwVQR4RQggD+dSD8Ov9q/Bb80fsDIyh/A6h/A4jC736AEIAS1IJK0ARVAP6H8ff5FwB6CTz/z08BDFD/DRR+/f3TFki4Bo5ABKTAbpHJv5/+/EMgugOiu3/9CdADXr7+8ukAAUIUEoI/JAQKQLuH35n+av5d/Pz9lwMMQP0d9PzlA8r7QEYIUfkNAun3bz85f7X+/tsv/AMgIkIcBSj/Oubg048D8BCksQQDGP43fwr8KoCnCPR3YGTQPwX/h7/+BkgHQUiZSQQF//OPPz79pvED9Pfg89cfP34+Kjvc94GAIsjxz4FDnr/9+AUZsFQDqP9/fg7i8X/+xfgZgKvXvwDQQPoLwPLv8Xf8tQcQoRRw/ZU/iL8A2h8B9M9BIn4/frmG+hSQX2QG8F8//unBw1r/kP4CfALCU8T/838AQ8j49eGfD+qHAMP//N8XYipBQS2A/0F8ShyA+OXIf0c64BAl//+A/POfT/JH+ivf/+mPzwH2aURVAFx//9L9/etXaaBiwev//OXb9E8JHB+GiK//5PcfX759TeD4zUD2+0//fP/y5dNH4/qP8gmKyAjxw6K/v3/7+OnjB3NRir/Z/fHj98+fP3/69Pnz999/IC7+1ABXH79//fr95xBI/vz5g3/O/vjx429R8uvXz58//7SPBdG/yX9+fP/+DRk+ffn06ccPKJ558efffxl/2YfCFEoA9/jz/kP781ZeEk+PH/+/A2y1xRb/ST8B3wJXTmB8QBIAAAAASUVORK5CYII=" alt="GST Logo">
+            <h2>Government of India</h2>
+            <h3>Goods and Services Tax</h3>
+        </div>
+        
+        <h1>CERTIFICATE OF REGISTRATION</h1>
+        
+        <div class="content">
+            <table>
+                <tr>
+                    <th>GSTIN</th>
+                    <td>27AADCS0472N1Z1</td>
+                </tr>
+                <tr>
+                    <th>Legal Name</th>
+                    <td>[YOUR STARTUP NAME]</td>
+                </tr>
+                <tr>
+                    <th>Trade Name</th>
+                    <td>[YOUR STARTUP BRAND NAME]</td>
+                </tr>
+                <tr>
+                    <th>Constitution of Business</th>
+                    <td>Private Limited Company</td>
+                </tr>
+                <tr>
+                    <th>Date of Registration</th>
+                    <td>01/01/2024</td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td>Maharashtra</td>
+                </tr>
+                <tr>
+                    <th>Jurisdiction</th>
+                    <td>Centre - Mumbai</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>123, Innovation Hub, Tech Park, Mumbai - 400001</td>
+                </tr>
+            </table>
+            
+            <div class="qrcode">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAAAM1BMVEX///8AAADf39+/v78fHx9/f3+fn58/Pz8PDw9fX1+Pj48vLy/v7++vr69PT08zMzNvb2/SXOxvAAAEBUlEQVR42u2c23aDMAxEgZjLpf//t6cJNCGJLevIUqyz9t08dTagGUm2BeR2IwiCIAiCIAiCIAiCIAiCIAiCIP4fux1wP+B5wK4fO3jO8GG/7YC7C77BA+8LHNcEr+aCi+N+ugG4xgQT2yYDcA0Fjpl3f4B9PHDJMS+L84Czyf1lGeZlRRSm+xPcwG4zhbn+BAew2UxhW+c/nDeTOIGVwo++/oSj2ew7cFL+fAoAmSkcq/zzszXBR1Xnf2ymcKjyL8zWBEs0e2y3acJQdbZpwlT13CNMFebzX4/2qIrQNGEIyk9lQhOU33YpTGwaM9NlwiDMGeu3TThu1eC1WsSWCVNdZ5smpAr/qLC9OZtg5o9kH+sXpwmZP5LHKu5NE6ZLwpuaf+qTaquE9APldPLzR+Jy8vNH4nJy80fi3mTmj8S9ycwfiXuTmT8S9yYzfyTuTWb+SNybzPyRuDe5+SNxOZn5I3E5mfkjcTmZ+SNxOYvfYolzM/m3DOdm8vNH4tpM1u+6HNs5wm6D3Ruw+YIgCIIgxnF/+3F/f3N/g3V/R+d2i+p21+12W+52n+924+52J+3F6Hqn7nIr7/Zj4fZr4/7z5P5753JvMrldHLldPbn9gLndIbrdgrndhLrd5rrdR7vdqLvd+rvdW7j9PLn9Xrr9wPr9Inv9RPv9xnv9SHznN+Y7P1Lf+ZH7zo/kK39U59vsf+dP9jt/8t/5twPu/NsB9wSH/XbAbZD7hvw25D7I/Yb8NuyDvmG/Dfug79FxHxSPOOqD4hEo2g4sow4sow4sow4so+4fRz1QUgcW4IHiQQ8Uj3qgeNQDxaMe6KMHHPZA8bAHioc90EcPKB72QPGwB/roAccd4OoBxx3gugfcdoAbDzjuAMc94LgHHPeA4x5w3AOOe8BxDzjuAcc94LgHHPeA4x5w3AOue8B1D7juAdc94LoH3HjAsQcce8CxBxx7wLEHHHvAsQcce8CxBxx7wLEHHHvAsQcce8CxBxx7wI0HHHvAsQcce8CxBxx7wLEHHHvAsQcc94DjHnDcA457wHEPOO4Bxz3guAcc94DjHnDcA457wHEPOO4Bxz3guAcc94DrHnDdA657wHUPuO4BNx5w4wHHHnDsAccecOwBxx5w7AHHHnDsAccecOwBxx5w7AHHHnDsAccecOwBxx5w7AHHHnDsAccecOwBxx5w7AHHHnDsAccecOwBxx5w7AGf8oCjHnDUA456wFEPOOoBRz3gqAcc9YCjHnDUA456wFEP+JQHfMoDPuUBn/KAT3nApzzgUx7wKQ/4lAd8ygM+5QGf8oBPecCnPOBTHvApD/iUB3zKAz7lAZ/ygE95wJc84Lee8Cky/gAikZwvQA3kgQAAAABJRU5ErkJggg==" alt="QR Code">
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="date">
+                <p>Date of Issue: 05/01/2024</p>
+            </div>
+        </div>
+        
+        <div class="certificate-number">
+            <p>This is a system generated certificate. No signature required.</p>
+        </div>
+    </div>
+</body>
+</html>

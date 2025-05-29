@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample PAN Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .card {
+            border: 3px solid #000;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #000;
+            position: relative;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 60px;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .info {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+            width: 120px;
+            flex-shrink: 0;
+        }
+        .value {
+            flex-grow: 1;
+        }
+        .photo {
+            border: 1px solid #444;
+            width: 100px;
+            height: 120px;
+            margin-left: auto;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            text-align: center;
+        }
+        .signature {
+            margin-top: 30px;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 40px;
+            opacity: 0.1;
+            color: #000;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .instructions {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .note {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Sample PAN Card for Testing</h2>
+        <p>This is a dummy PAN (Permanent Account Number) Card template that you can save as PDF to use for testing the verification system.</p>
+        <p class="note">Note: This is not a real PAN card. In a real scenario, you would upload your actual PAN card.</p>
+        <h3>How to use:</h3>
+        <ol>
+            <li>Press Ctrl+P (or Command+P on Mac) to open the print dialog</li>
+            <li>Select "Save as PDF" as the printer</li>
+            <li>Save the file as "YourName-PAN-Card.pdf"</li>
+            <li>Use this PDF to test the verification upload system</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <div class="watermark">SAMPLE DOCUMENT</div>
+        <div class="header">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAB3RJTUUH5QEFCjIYNPu2VQAABuVJREFUaN7tm3tsU1UYwH+n625dt9nrxnRu2xiMhyKKGkCIATWAIojEoOADAxofUcGYqAkJGGIEjTH+QRSMCCY+IkGJAYJRBAGVhyMqIAIZrAy2sY2u69qtj+v946zsrre33dbSdfH+k5v23HO+833nnvu975FUVcUkKVAUD4ACyMBdwDTgEaAKMN/Ke1RgENgH7AF+BhyipknR5Tacfo6D7AmCTM1qiOkDNgOfAG3p2CobgDLgNUD6j8IzwS7gTaBXVqGigriXpQCLgO5/OdwTrbsE6JRUVKUYSBdcBp4ALt/B6Aj9ElDd6XA3XJsn3c7oULQLuHTNPFEo33OCnwZ+HGNwTbSrQt9RI3xhDHzSE9F3hYYfAXaNMTiibY249wy/mibzXQKWAGvHIFwT7VnSNc8Yjq8M5buapj2U9lIHHuPtUJbgmoJzgOJQfodWCQLgdbMAJ1AJlI4yuBfoBD4DPgXaSOKBpRVqURTlGDAeuAtojzOvBVgJ/BQLTFHkZOHrgXnAQ8A04HEc2NlICmwSu/mQaJdYt4H0wH8CDgCvia9xAm9FJQ6phs65wGfAXNEeABYDq4BmHNiGCQ+L8ZjogzgX35Mm+F7gCREm/h0B9gA/2OhLGi4Dr4vxmOi38JiGjMETvKch4AEgrBPA+8BZG9p2FmlIQ7ps+VQBXwO/i/hKD25MJ9XtBA4Bc4CpYt80EYrqbGgRYUjDpWSSV/itwC9AH3ANOCHCVVjHwMNAgxj/ATgMFIix08ADNrRcF4Y0XATqkwlnFhoiiu94YeCg+F4g1sIhW2p1YiynqBuzgBvAJDH22dCSkWFykgBHBDwcZVavWLdB4/hEh3Nc5PjJonMaNEwxxHit0HJdGBKpO678VLIPTlHqBh6zgLnDnHtZHEgO4HVgFvCkDXCAlYYxE9Cxm8RPKAqpwGcCo4EfDXuryXpfBn4Ui5kHzNbxwo3AdrG/W4F9BnCj9szIoKsOuDElwKJdJvb0vOiLg1Z5fvbrFWAlsBz4TCdLO2smtUqnWXeLzl4Qe/8zYIk41IGZaP8t9ukFQJ0YuxuYH7FXO68T0lykb97bIlrGDXwJzAaOiv2sA04KwKwUwNtFBkwE1gK1wmeYIxZbi5O+rOb4dtGvEJ80oUKPeJZewILILgHvERElo+2OiJEHor5awr8tVwJTxUJvAJ8L0HBGcBNdK/ZtotA0BGxK9bz+aCS1iiyCJsswXU8GXwvWmdZ4UTw41y2CpisMJWlZ3NfjIswVIevntvSeQ06EPaaBvnozq+AsMEPwFInke31WcDPQBPRngbsXuCl0TD6VdrKvJOD3RpJbZxKZo0SasxlpuWyBG3pOwNLMcLSZitktgmuJVyM7FDUZ71WB50XR47aJ3gisFPv7qkiMlqQIbjbI2hsZxu2PoWtflAafUJYW0d8gsBrYnxR4Enk7YUIb8Gjsfd4ObI6j4CbwHLDf4Hm2ATXAhKj7X4+j65TQVKVpqJBTrd5WxGhTRPo6P46S14ADUWOfA9OBIzqTcxl4VETtsJnNIlGzQWjRNCwWmvLsLARTiK++Efv7vYFXHwSWxenO+nQ0hcQCdMFLoZFlUhm4azstJea4YFnER41gVARLAn7CTqJ/ch7gL8T5rQc4A/w6qqnuLDFwT32MnSWAP9PcGXDwcXZz0tEpGsoNwCekK9W9VW7GVklCFUWDhfYu+lLJ4bURpU60Eyd8l4f5aKtu3RJMS+S+GXX3fTtHzACqidekqKfzO9DEwyyM1pBo+eYDFoQkazmdEo4EbS2pR47W/5sETgDv3lngGO5LtrOYLjpciZYQvVkAd4lxewalLDPQJFuLZaoEzLOZnt4PrBD7dE/G4OICeoalNpN92iFinc2KrVN8OjPpzgagNupc/1+DV8TRtQhYY/NI2SBc37IsuTYWATujUt1oXbMzzLm1vN+bLfAKYBPR3ZlU9L/OZ801qeriDKu36QYFz2MZdt6vAs8aKXcNc05vAlaJkJXJSwdbdUNWJSzhtRzfr6qcR+K/0bgrFQ1aSGs2uDG/CKrpDtrRHrljgx8SERwVx1vDRa9eJnBdLCJdnQFOQGxXoUe9TkBXLguYFkPwUxlaoKbhmV5Qlg+Q5ea90QnEcmCp+HwEuA8ry9HbVqDrRCKV8kap67f8paRWVJVelEi7qCp+CoMPrN70qvC+8DkGRIxWVaskrCfACYjyUVZV/IAf8Idhw+1mdzUEzJLFD6Go+2DYkKNEbl3K4+bJreS1nZrC/wJabdhb+BxsyQAAAABJRU5ErkJggg==" alt="Income Tax Logo">
+            <div style="text-align: center;">
+                <div style="font-weight: bold;">INCOME TAX DEPARTMENT</div>
+                <div style="font-weight: bold;">GOVT. OF INDIA</div>
+            </div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAABBCAMAAACtH3JBAAABBVBMVEUAAAD///8Af//+cQCCKj7/cAD/cgD/cwD/dgD/eACBKT7/fAD9bgCBKj3/bgD/bwD9cACCKz//dAAyjP+DKTyDKj7/ewCDLD+EKj2mjA//ZwCGLkGGKz31bgCPaZQdgf/0bwDzbQCKMESKM0X3cADxbACQNUfvawDzbgDvagCDK0AAef+UN0ntagCZW4DtZwCXOUumS2DrZgCeQFTqZQCaPVKiRFjnYwChQ1foYgCfQleNMkadP1S2VWvmYQG0U2nLbIPjXwDWZHjiXgDaXE/dZnzgXADcWwDCX3XaWQDJaH3YWADZaIHCWnC/WG2/XnS9V2vsw8XWt8bCor/z4+XaxM7Xtsvn0derX3AX+dCMAAAAAXRSTlMAQObYZgAAA0dJREFUSMftlntTGkEQxXcHFxBYDgFBouINKvhCjUaixvgIL5MYkvz/X1L9GKrIhiq22qr0/HFnZ++v+/bt3OiLvijWYinSEOtY41iDVeVPDa/9fYprxhf8pi3vovbpz/qXx42Ntb/Ra9dycWhIOl+NbZbnzGenWtU2vPHaNtSOGVVVFdC2FUXhOIFXFa1hnnptFHyiqqqsyWpD/KMYxvecJiuyrCR0nYcyuh1c1WRVVTRRtVSj3282DEuUZFUxqjTpcpiGAsFtixU7HbcgBJiuMitfxCqLvytoxEI+n+SzJVlkPV7T8V25st7tlKMej6SPaI+n/JCYluKOgnkuOErmF2vVs/jGyvIkJvz5fD678JoVy0RxQrR1ZO/XdFv7lHZgN5TKJ7P5bDL5Sfbi3UxZlCiakdRCElmmhOKQfhxGnLBarWcWteWSQQkxf5MWwJgarUicaXSz55uZpefeYwYhWwwRPRsy82rTibaPw5hyaesyk0MITL0+YtZv+fywhvb+5obP1/C2b9a+D00uOi3BzQyTJNnIFwIOn89376vf9wDn8cV8Pv84vb6cdZ3qtrJTOxcdU0kmcwFfIBBAKBC4A+Vm7j4YRPfdMJZ6bpUzJ62aDb8EgTv8/vt7R7qi86AL5z7nru7Ppwm+Qq5jum0P/NC9vyhTNlpksr/35dy1De+Zsl4+KXTRTg+H4fqDwbojj/4KIrhP9vknx2iu9Q7D9UeZ9pJtWng1W25JVMzNhOs4gWvQgkFQcL9U6K7cVm6jB3NjgYbq48r7qrliivI4jmv4T6BB+CPwb9N5L60OJS4eZ/ENHI8gfGkC/qMbF0oqIbvPnMVJ/AQ/vHiQNyUpiEP3k7M4ge/8/fsX9kUJ1yf326kz+DJO4Id6ufzTLzBl/nVcrpkfpKb4Fk7gg9ar+KToZLqWbfl9tsl+j0/wY9RyRStVWf+GLQ6tKxfltol/ww9Rt9ul9mmut9+uFyvF1yWYmOAveKqPum00SZMk4eGErRYK56lfPSlM8TVs4P3n559tNV7aMF1P6DztxRaxZ/wTVn9BeGo6UVpRgDr15ta5w+8+oH+FvvnIsISIjXI584jWj7/jr7TdbxlY1m+Y9NnGu82EkTMbfNxPxze2pAhm4q8vg4iUXuMRtmHcoj/RXxdlPOj5ZsOAAAAAAElFTkSuQmCC" alt="National Emblem">
+        </div>
+        
+        <div class="title">
+            PERMANENT ACCOUNT NUMBER CARD
+        </div>
+        
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 70%;">
+                <div class="info">
+                    <div class="label">PAN:</div>
+                    <div class="value">ABCDE1234F</div>
+                </div>
+                <div class="info">
+                    <div class="label">Name:</div>
+                    <div class="value">[YOUR NAME]</div>
+                </div>
+                <div class="info">
+                    <div class="label">Father's Name:</div>
+                    <div class="value">[FATHER'S NAME]</div>
+                </div>
+                <div class="info">
+                    <div class="label">Date of Birth:</div>
+                    <div class="value">01/01/1990</div>
+                </div>
+            </div>
+            <div class="photo">
+                [PHOTO]<br>
+                Replace with<br>
+                your photo
+            </div>
+        </div>
+        
+        <div class="signature">
+            <div>Signature</div>
+            <div style="margin-top: 15px;">Income Tax Department</div>
+        </div>
+    </div>
+</body>
+</html>

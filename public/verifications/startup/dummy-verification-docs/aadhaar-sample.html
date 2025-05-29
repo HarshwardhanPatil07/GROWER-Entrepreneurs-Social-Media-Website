@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Aadhaar Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 550px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            color: #333;
+            position: relative;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #ff6b00;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .title {
+            flex-grow: 1;
+        }
+        .title h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #ff6b00;
+        }
+        .title h2 {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: #888;
+            font-weight: normal;
+        }
+        .main-content {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .details {
+            flex-grow: 1;
+            padding-right: 20px;
+        }
+        .photo {
+            width: 120px;
+            height: 160px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            text-align: center;
+            font-size: 12px;
+        }
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            text-align: center;
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+        .info-label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #666;
+        }
+        .info-value {
+            font-size: 16px;
+        }
+        .aadhaar-number {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-top: 20px;
+            color: #ff6b00;
+        }
+        .footer {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        .instructions {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .note {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">
+        <h2>Sample Aadhaar Card for Testing</h2>
+        <p>This is a dummy Aadhaar card template that you can save as PDF to use for testing the verification system.</p>
+        <p class="note">Note: This is not a real Aadhaar card. In a real scenario, you would upload your actual Aadhaar card.</p>
+        <h3>How to use:</h3>
+        <ol>
+            <li>Press Ctrl+P (or Command+P on Mac) to open the print dialog</li>
+            <li>Select "Save as PDF" as the printer</li>
+            <li>Save the file as "YourName-Aadhaar-Card.pdf"</li>
+            <li>Use this PDF to test the verification upload system</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <div class="header">
+            <img class="logo" src="data:image/png;base64,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" alt="Aadhaar Logo">
+            <div class="title">
+                <h1>आधार | AADHAAR</h1>
+                <h2>भारत सरकार | Government of India</h2>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="details">
+                <div class="info">
+                    <div class="info-label">Name:</div>
+                    <div class="info-value">[YOUR NAME]</div>
+                </div>
+                <div class="info">
+                    <div class="info-label">Date of Birth:</div>
+                    <div class="info-value">01/01/1990</div>
+                </div>
+                <div class="info">
+                    <div class="info-label">Gender:</div>
+                    <div class="info-value">Male/Female</div>
+                </div>
+                <div class="info">
+                    <div class="info-label">Address:</div>
+                    <div class="info-value">
+                        123, Sample Street, Your City<br>
+                        Your State, PIN: 123456
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                [PHOTO]<br>
+                Replace with<br>
+                your photo
+            </div>
+        </div>
+        
+        <div class="qr-code">
+            [QR CODE]<br>
+            Sample QR Code
+        </div>
+        
+        <div class="aadhaar-number">
+            1234 5678 9012
+        </div>
+        
+        <div class="footer">
+            <div>आधार - प्रत्येक भारतीय के लिए एक विशिष्ट पहचान</div>
+            <div>Aadhaar - A unique identity for every Indian</div>
+            <div>Toll Free: 1800 300 1947 | www.uidai.gov.in</div>
+        </div>
+    </div>
+</body>
+</html>
